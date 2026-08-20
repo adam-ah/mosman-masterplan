@@ -166,6 +166,15 @@ body:not(.nosidebar) #toggle { left: calc(var(--side-w) - 42px); }
   background: var(--accent-soft); border-radius: var(--radius);
   padding-left: 14px; padding-right: 14px;
 }
+.pg { scroll-margin-top: 20px; }
+.doc mark.hit {
+  background: var(--mark); color: inherit;
+  border-radius: 2px; padding: 0 1px;
+}
+.doc mark.hit.primary {
+  box-shadow: 0 0 0 2px var(--accent);
+  scroll-margin-top: 45vh; scroll-margin-bottom: 45vh;
+}
 @media (max-width: 1240px) {
   .pg .pnum { position: static; display: block; margin-bottom: 2px; }
 }

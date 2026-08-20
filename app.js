@@ -325,6 +325,127 @@
   q.addEventListener('input', function () { clearTimeout(timer); timer = setTimeout(run, 70); });
   if (qclear) qclear.addEventListener('click', function () { q.value = ''; clearResults(); q.focus(); });
 
+  var liveMarks = [];
+
+  function clearMarks() {
+    for (var i = 0; i < liveMarks.length; i++) {
+      var m = liveMarks[i];
+      if (!m.parentNode) continue;
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    }
+    liveMarks = [];
+  }
+
+  // Wrap every query-term occurrence inside `el` in <mark>, return them with their offsets.
+  function markTerms(el, terms) {
+    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+    var entries = [], text = '', node;
+    while ((node = walker.nextNode())) {
+      var pn = node.parentNode.nodeName;
+      if (pn === 'SCRIPT' || pn === 'STYLE' || !node.nodeValue) continue;
+      entries.push({ node: node, start: text.length, len: node.nodeValue.length, hits: [] });
+      text += node.nodeValue + '\n';
+    }
+    if (!entries.length) return [];
+
+    var low = text.toLowerCase(), all = [];
+    for (var t = 0; t < terms.length; t++) {
+      var term = terms[t], from = 0, k, guard = 0;
+      while ((k = low.indexOf(term, from)) > -1 && guard++ < 400) {
+        if (k === 0 || !isWordChar(low.charAt(k - 1))) all.push({ at: k, len: term.length });
+        from = k + 1;
+      }
+    }
+    if (!all.length) return [];
+    all.sort(function (a, b) { return a.at - b.at; });
+
+    var ei = 0;
+    for (var a = 0; a < all.length; a++) {
+      while (ei < entries.length && entries[ei].start + entries[ei].len <= all[a].at) ei++;
+      if (ei >= entries.length) break;
+      var e = entries[ei];
+      var off = all[a].at - e.start;
+      if (off < 0 || off + all[a].len > e.len) continue;
+      e.hits.push({ off: off, len: all[a].len, at: all[a].at });
+    }
+
+    var made = [];
+    for (var n = 0; n < entries.length; n++) {
+      var ent = entries[n];
+      if (!ent.hits.length) continue;
+      ent.hits.sort(function (x, y) { return y.off - x.off; });
+      for (var h = 0; h < ent.hits.length; h++) {
+        var hit = ent.hits[h];
+        var tail = ent.node.splitText(hit.off);
+        tail.splitText(hit.len);
+        var mk = document.createElement('mark');
+        mk.className = 'hit';
+        tail.parentNode.replaceChild(mk, tail);
+        mk.appendChild(tail);
+        made.push({ el: mk, at: hit.at });
+      }
+    }
+    made.sort(function (x, y) { return x.at - y.at; });
+    return made;
+  }
+
+  // Scroll to the tightest cluster of query terms on the page, not the page top.
+  function focusTarget(smooth) {
+    clearMarks();
+    var prev = document.querySelector('.pg.target');
+    if (prev) prev.classList.remove('target');
+    if (!here.page) return;
+    var el = document.getElementById('p' + here.page);
+    if (!el) return;
+    el.classList.add('target');
+
+    var anchor = el, marks = [];
+    if (curTerms.length) {
+      marks = markTerms(el, curTerms);
+      liveMarks = marks.map(function (m) { return m.el; });
+      if (marks.length) {
+        var win = bestWindow(el.textContent, curTerms);
+        var want = win ? win.start : marks[0].at;
+        var pick = marks[0];
+        for (var i = 0; i < marks.length; i++) {
+          if (marks[i].at >= want) { pick = marks[i]; break; }
+        }
+        pick.el.classList.add('primary');
+        anchor = pick.el;
+      }
+    }
+    aim(anchor, anchor === el ? 'start' : 'center', smooth);
+  }
+
+  var aimTimers = [];
+
+  // Lazy figures above the target can shift layout after we scroll, so re-check and correct.
+  function aim(anchor, block, smooth) {
+    for (var i = 0; i < aimTimers.length; i++) clearTimeout(aimTimers[i]);
+    aimTimers = [];
+    var attempts = 0;
+
+    function go(useSmooth) {
+      if (!anchor.isConnected) return;
+      attempts++;
+      anchor.scrollIntoView({ block: block, behavior: useSmooth ? 'smooth' : 'auto' });
+    }
+
+    function check() {
+      if (!anchor.isConnected) return;
+      var r = anchor.getBoundingClientRect();
+      var margin = block === 'center' ? 0 : 4;
+      if (r.top < -margin || r.bottom > window.innerHeight + margin) go(false);
+    }
+
+    go(smooth);
+    [180, 450, 900, 1600].forEach(function (ms) {
+      aimTimers.push(setTimeout(check, ms));
+    });
+  }
+
   function markActive() {
     here.file = location.pathname.split('/').pop();
     here.page = location.hash.indexOf('#p') === 0 ? parseInt(location.hash.slice(2), 10) : null;
@@ -336,12 +457,7 @@
       if (hit && !found) found = items[i];
     }
     if (found) found.scrollIntoView({ block: 'nearest' });
-    var prev = document.querySelector('.pg.target');
-    if (prev) prev.classList.remove('target');
-    if (here.page) {
-      var el = document.getElementById('p' + here.page);
-      if (el) el.classList.add('target');
-    }
+    focusTarget(true);
   }
 
   function step(dir) {
@@ -387,17 +503,12 @@
     }
   }
 
-  if (here.page) {
-    var el = document.getElementById('p' + here.page);
-    if (el) {
-      el.classList.add('target');
-      setTimeout(function () { el.scrollIntoView({ block: 'start' }); }, 0);
-    }
-  }
-
   var stored = '';
   try { stored = sessionStorage.getItem(KEY) || ''; } catch (e) {}
   try { if (sessionStorage.getItem(SIDE) === '0') document.body.classList.add('nosidebar'); } catch (e) {}
   if (stored) { q.value = stored; run(false); }
   if (hint && stored) hint.classList.add('dim');
+
+  // After the browser's own hash jump, re-aim at the matched text.
+  setTimeout(function () { focusTarget(false); }, 0);
 })();
