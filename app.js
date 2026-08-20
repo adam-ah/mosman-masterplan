@@ -102,6 +102,64 @@
       .filter(function (t) { return t.length > 1; });
   }
 
+  var PROX_WEIGHT = 5.0, PROX_SCALE = 110, MAX_POS = 160;
+
+  function cmpScore(a, b) { return b[0] - a[0]; }
+
+  function isWordChar(c) {
+    return (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9');
+  }
+
+  // Smallest text span covering the most distinct query terms.
+  function bestWindow(text, terms) {
+    var low = text.toLowerCase(), pts = [], present = 0, i, t, from, k;
+    for (i = 0; i < terms.length; i++) {
+      t = terms[i];
+      from = 0;
+      var found = 0;
+      while (from <= low.length - t.length) {
+        k = low.indexOf(t, from);
+        if (k < 0) break;
+        if (k === 0 || !isWordChar(low.charAt(k - 1))) {
+          pts.push([k, i]);
+          if (++found >= MAX_POS) break;
+        }
+        from = k + 1;
+      }
+      if (found) present++;
+    }
+    if (!pts.length) return null;
+    pts.sort(function (a, b) { return a[0] - b[0]; });
+
+    var count = {}, distinct = 0, left = 0, best = null;
+    for (var r = 0; r < pts.length; r++) {
+      var ri = pts[r][1];
+      count[ri] = (count[ri] || 0) + 1;
+      if (count[ri] === 1) distinct++;
+      while (distinct === present) {
+        var start = pts[left][0];
+        var end = pts[r][0] + terms[ri].length;
+        if (!best || end - start < best.span) {
+          var chars = 0;
+          for (var c in count) if (count[c] > 0) chars += terms[c].length;
+          best = { span: end - start, start: start, end: end, n: present, chars: chars };
+        }
+        var li = pts[left][1];
+        if (--count[li] === 0) distinct--;
+        left++;
+      }
+    }
+    if (best) {
+      best.contiguous = best.span <= best.chars + present;
+      var inner = text.slice(best.start, best.end), runs = 0;
+      for (var w = 0; w < inner.length; w++) {
+        if (inner.charCodeAt(w) === 32 && inner.charCodeAt(w - 1) !== 32) runs++;
+      }
+      best.words = Math.max(0, runs - (present - 1));
+    }
+    return best;
+  }
+
   function search(qs) {
     var terms = termsOf(qs);
     if (!terms.length) return [];
@@ -128,16 +186,45 @@
       }
       for (var dk in touched) hits[dk] += 1;
     }
-    var res = [], phrase = terms.length > 1 ? qs.toLowerCase().replace(/\s+/g, ' ').trim() : null;
+    var full = [], partial = [];
     for (var d2 = 0; d2 < NDOC; d2++) {
       if (!scores[d2]) continue;
       var cov = hits[d2] / terms.length;
       if (cov < 0.5 && terms.length > 1) continue;
-      var sc2 = scores[d2] * Math.pow(cov, 2.2);
-      if (phrase && T[d2].toLowerCase().indexOf(phrase) > -1) sc2 *= 3.5;
-      res.push([sc2, d2]);
+      var base = scores[d2] * Math.pow(cov, 2.2);
+      (hits[d2] === terms.length ? full : partial).push([base, d2]);
     }
-    res.sort(function (x, y) { return y[0] - x[0]; });
+    if (terms.length < 2) {
+      full.sort(cmpScore);
+      return full.slice(0, 200).map(function (r) { return [r[0], r[1], -1, true, null]; });
+    }
+
+    var pool = [];
+    for (var fi = 0; fi < full.length; fi++) pool.push([full[fi][0], full[fi][1], true]);
+    if (full.length < 8) {
+      partial.sort(cmpScore);
+      for (var pi = 0; pi < partial.length && pi < 120; pi++) {
+        pool.push([partial[pi][0] * 0.12, partial[pi][1], false]);
+      }
+    }
+    pool.sort(cmpScore);
+
+    var res = [];
+    var limit = Math.min(pool.length, 500);
+    for (var k = 0; k < limit; k++) {
+      var d = pool[k][1];
+      var win = bestWindow(T[d], terms);
+      var sc = pool[k][0], at = -1, words = null;
+      if (win) {
+        at = win.start;
+        var gap = Math.max(0, win.span - win.chars);
+        sc *= 1 + PROX_WEIGHT * Math.exp(-gap / PROX_SCALE) * (win.n / terms.length);
+        if (win.contiguous) sc *= 1.8;
+        if (win.n === terms.length) words = win.words;
+      }
+      res.push([sc, d, at, pool[k][2], words]);
+    }
+    res.sort(cmpScore);
     return res.slice(0, 200);
   }
 
@@ -147,13 +234,16 @@
     });
   }
 
-  function snippet(text, terms) {
-    var low = text.toLowerCase(), at = -1;
-    for (var i = 0; i < terms.length; i++) {
-      var k = low.indexOf(terms[i]);
-      if (k > -1 && (at === -1 || k < at)) at = k;
+  function snippet(text, terms, at) {
+    if (at === undefined || at < 0) {
+      var low = text.toLowerCase();
+      at = -1;
+      for (var i = 0; i < terms.length; i++) {
+        var k = low.indexOf(terms[i]);
+        if (k > -1 && (at === -1 || k < at)) at = k;
+      }
     }
-    if (at === -1) at = 0;
+    if (at < 0) at = 0;
     var start = Math.max(0, at - 70), end = Math.min(text.length, start + 210);
     var s = esc(text.slice(start, end));
     var uniq = terms.slice().sort(function (a, b) { return b.length - a.length; });
@@ -195,10 +285,17 @@
     for (var i = 0; i < list.length; i++) {
       var d = list[i][1], m = M[d], sec = S[m[0]];
       var active = (sec.f.split('/').pop() === here.file && m[1] === here.page) ? ' on' : '';
-      h += '<a class="r' + active + '" href="' + hrefFor(d) + '" data-i="' + i + '">'
+      var tag = '';
+      if (terms.length > 1) {
+        var wg = list[i][4];
+        if (!list[i][3]) tag = '<u class="pt">partial</u>';
+        else if (wg === 0) tag = '<u class="px">phrase</u>';
+        else if (wg !== null) tag = '<u class="px">' + wg + 'w apart</u>';
+      }
+      h += '<a class="r' + active + (list[i][3] ? '' : ' part') + '" href="' + hrefFor(d) + '" data-i="' + i + '">'
         + '<span class="rh"><b>' + esc(sec.l || '—') + '</b> ' + esc(sec.t)
-        + '<i>p.' + m[1] + '</i></span>'
-        + '<span class="rs">' + snippet(T[d], terms) + '</span></a>';
+        + '<i>p.' + m[1] + '</i>' + tag + '</span>'
+        + '<span class="rs">' + snippet(T[d], terms, list[i][2]) + '</span></a>';
     }
     box.innerHTML = h;
     document.body.classList.add('searching');

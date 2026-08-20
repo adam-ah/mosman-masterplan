@@ -20,6 +20,18 @@ Fuzzy matching is built in: `biodivrsity` finds *Biodiversity Assessment*, `hert
 Results deep-link to the exact page (`sections/04-d-heritage-review.html#p439`), and the
 landed-on page is highlighted. Click any figure to open it full size.
 
+### Multi-word queries are proximity-ranked
+
+A query like `setback countess` returns pages containing **both** terms, ranked by how close
+together they appear — not pages containing either one, and not only exact phrases. Each hit
+is badged with the distance:
+
+| Badge | Meaning |
+| --- | --- |
+| `phrase` | the terms are adjacent |
+| `7w apart` | 7 words between the closest occurrences |
+| `partial` | not every term is on this page — always ranked below full matches, and shown only when there are too few full matches |
+
 ## Layout
 
 | Path | What |
@@ -39,8 +51,14 @@ a trigram index for fuzzy matching, and the full text of all 1,495 pages for sni
 Postings are base-36 delta-encoded and decoded lazily on first use, so startup stays fast.
 
 Ranking combines idf-weighted term frequency with exact (1.0) / prefix (0.62) / fuzzy
-(0.45–0.3) match weights, a term-coverage factor, and a 3.5× boost for exact phrase hits.
-Typical query: **1–8 ms** over the whole document.
+(0.45–0.3) match weights and a term-coverage factor. Multi-word queries then get a
+proximity pass: for each candidate page a sliding window finds the **smallest span of text
+containing all query terms**, and the score is multiplied by `1 + 5·e^(−gap/110)`, so
+adjacent terms outrank distant ones. Contiguous phrases get a further 1.8×.
+
+Proximity needs term positions, which the inverted index doesn't store — but the full page
+text is already shipped for snippets, so positions are computed at query time on the top 500
+candidates only. That keeps the index the same size and still lands in **1–8 ms**.
 
 Because `file://` blocks `fetch`, the sidebar cannot be a single-page app. Instead the query
 is kept in `sessionStorage` and the search re-runs on each page load — at a few milliseconds
