@@ -153,7 +153,14 @@ def shell_open(root, title):
   <nav id="secnav" class="secnav">{nav}</nav>
 </aside>
 <button id="toggle" title="Toggle sidebar (\\)">&#9776;</button>
-<div class="content">"""
+<div class="content">
+<header class="mbar">
+  <button id="mmenu" aria-label="Contents and search">&#9776;</button>
+  <button id="msearch" class="mq">Search {total_pages} pages&hellip;</button>
+  <span id="mcount" class="mcount"></span>
+  <button id="mprev" aria-label="Previous hit" disabled>&#8249;</button>
+  <button id="mnext" aria-label="Next hit" disabled>&#8250;</button>
+</header>"""
 
 
 SHELL_CLOSE = f"""</div></div>

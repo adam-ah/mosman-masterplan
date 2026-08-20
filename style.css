@@ -43,7 +43,12 @@ kbd {
   display: flex; flex-direction: column;
   background: var(--panel); border-right: 1px solid var(--line);
 }
-body.nosidebar .side { display: none; }
+@media (min-width: 861px) {
+  body.nosidebar .side { display: none; }
+}
+
+/* mobile top bar — replaced by the sidebar on desktop */
+.mbar { display: none; }
 
 .brand {
   padding: 14px 16px 10px; font-weight: 650;
@@ -201,7 +206,80 @@ figure a:hover img { border-color: var(--accent); }
 .pager a:hover { text-decoration: underline; }
 
 @media (max-width: 860px) {
-  .side { position: fixed; z-index: 70; box-shadow: 0 0 40px rgba(0,0,0,.3); }
-  body:not(.nosidebar) #toggle { left: calc(var(--side-w) - 42px); }
-  .doc, .home-main { padding-left: 18px; padding-right: 18px; }
+  #toggle { display: none; }
+
+  .mbar {
+    display: flex; align-items: center; gap: 7px;
+    position: sticky; top: 0; z-index: 60;
+    padding: 7px 9px;
+    background: var(--panel); border-bottom: 1px solid var(--line);
+  }
+  .mbar button {
+    flex: none; min-width: 44px; height: 44px;
+    display: grid; place-items: center;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--bg); color: var(--ink);
+    font-size: 19px; line-height: 1; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mbar button:disabled { opacity: .35; }
+  .mbar button:active:not(:disabled) { background: var(--accent-soft); border-color: var(--accent); }
+  .mbar .mq {
+    flex: 1 1 auto; min-width: 0; justify-items: start;
+    justify-content: flex-start; padding: 0 14px;
+    border-radius: 999px; font-size: 14.5px; color: var(--muted);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;
+    text-align: left; line-height: 42px;
+  }
+  .mbar .mq.set { color: var(--ink); font-weight: 600; }
+  .mcount {
+    flex: none; font-size: 12px; color: var(--muted);
+    font-variant-numeric: tabular-nums; padding: 0 1px;
+  }
+  .mcount:empty { display: none; }
+
+  /* sidebar becomes an off-canvas drawer, closed by default */
+  .side {
+    position: fixed; top: 0; left: 0; bottom: 0;
+    height: 100%; width: min(88vw, 360px);
+    transform: translateX(-101%);
+    transition: transform .22s ease;
+    z-index: 90; box-shadow: 0 0 40px rgba(0,0,0,.35);
+  }
+  body.side-open .side { transform: none; }
+  body.side-open::after {
+    content: ''; position: fixed; inset: 0;
+    background: rgba(0,0,0,.45); z-index: 85;
+  }
+
+  .brand { padding: 16px 16px 10px; font-size: 17px; }
+  #q { padding: 12px 44px 12px 14px; font-size: 16px; }
+  #qclear {
+    top: 2px; right: 17px; width: 44px; height: 44px;
+    display: grid; place-items: center; font-size: 23px; padding: 0;
+  }
+  /* page permalinks: keep the visual size, widen the tap area */
+  .pg .pnum {
+    display: inline-block; padding: 11px 12px;
+    margin: 0 0 2px -12px;
+  }
+  .r { padding: 12px 16px; }
+  .rs { font-size: 13.5px; }
+  .navitem { padding: 12px 16px; font-size: 15px; }
+  .navitem .l { width: 24px; height: 24px; }
+
+  .doc, .home-main { padding: 22px 16px 70px; }
+  .home-main h1 { font-size: 1.7rem; }
+  .sechead h1 { font-size: 1.5rem; }
+  .card { padding: 14px 16px; }
+  .doc h2 { font-size: 1.3rem; }
+  .doc h2.cover { font-size: 1.45rem; }
+  .doc h3 { font-size: 1.12rem; }
+  .pager { flex-direction: column; gap: 12px; }
+  .pager a { max-width: 100%; }
+}
+
+/* long tokens (URLs, reference strings) must never widen the page */
+.doc p, .doc h2, .doc h3, .doc h4, .ct strong, .rs {
+  overflow-wrap: break-word; word-break: break-word;
 }

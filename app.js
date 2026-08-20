@@ -301,6 +301,7 @@
     document.body.classList.add('searching');
     var on = box.querySelector('.r.on');
     if (on) on.scrollIntoView({ block: 'center' });
+    syncMobileBar();
   }
 
   function clearResults() {
@@ -308,6 +309,7 @@
     curList = [];
     document.body.classList.remove('searching');
     try { sessionStorage.removeItem(KEY); } catch (e) {}
+    syncMobileBar();
   }
 
   function run(store) {
@@ -458,6 +460,7 @@
     }
     if (found) found.scrollIntoView({ block: 'nearest' });
     focusTarget(true);
+    syncMobileBar();
   }
 
   function step(dir) {
@@ -474,7 +477,10 @@
 
   window.addEventListener('hashchange', markActive);
 
+  var isMobile = function () { return window.matchMedia('(max-width: 860px)').matches; };
+
   function setSide(open) {
+    if (isMobile()) { setDrawer(open); return; }
     document.body.classList.toggle('nosidebar', !open);
     try { sessionStorage.setItem(SIDE, open ? '1' : '0'); } catch (e) {}
   }
@@ -482,11 +488,66 @@
     setSide(document.body.classList.contains('nosidebar'));
   });
 
+  var mmenu = document.getElementById('mmenu');
+  var msearch = document.getElementById('msearch');
+  var mprev = document.getElementById('mprev');
+  var mnext = document.getElementById('mnext');
+  var mcount = document.getElementById('mcount');
+
+  function setDrawer(open) {
+    document.body.classList.toggle('side-open', open);
+  }
+
+  function syncMobileBar() {
+    if (msearch) {
+      var val = q.value.trim();
+      msearch.textContent = val || msearch.getAttribute('data-empty');
+      msearch.classList.toggle('set', !!val);
+    }
+    var items = box.querySelectorAll('.r');
+    var at = -1;
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].classList.contains('on')) { at = i; break; }
+    }
+    if (mcount) mcount.textContent = items.length ? (at >= 0 ? (at + 1) + '/' + items.length : items.length + '') : '';
+    if (mprev) mprev.disabled = !(items.length && at > 0);
+    if (mnext) mnext.disabled = !(items.length && at < items.length - 1);
+  }
+
+  if (msearch) {
+    msearch.setAttribute('data-empty', msearch.textContent);
+    msearch.addEventListener('click', function () {
+      setDrawer(true);
+      setTimeout(function () { q.focus(); q.select(); }, 230);
+    });
+  }
+  if (mmenu) mmenu.addEventListener('click', function () {
+    setDrawer(!document.body.classList.contains('side-open'));
+  });
+  if (mprev) mprev.addEventListener('click', function () { step(-1); });
+  if (mnext) mnext.addEventListener('click', function () { step(1); });
+
+  // Tapping a result should reveal the document, not stay behind the drawer.
+  box.addEventListener('click', function (e) {
+    if (isMobile() && e.target.closest && e.target.closest('.r')) setDrawer(false);
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!document.body.classList.contains('side-open')) return;
+    if (side && side.contains(e.target)) return;
+    if (e.target.closest && e.target.closest('.mbar')) return;
+    setDrawer(false);
+  });
+
   document.addEventListener('keydown', function (e) {
     var typing = /^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName);
     if (e.key === '/' && !typing) { e.preventDefault(); setSide(true); q.focus(); q.select(); return; }
     if (e.key === '\\' && !typing) { e.preventDefault(); setSide(document.body.classList.contains('nosidebar')); return; }
-    if (e.key === 'Escape') { if (typing) q.blur(); return; }
+    if (e.key === 'Escape') {
+      if (typing) q.blur();
+      if (document.body.classList.contains('side-open')) setDrawer(false);
+      return;
+    }
     if (typing) {
       if (e.key === 'ArrowDown') { e.preventDefault(); step(1); }
       if (e.key === 'ArrowUp') { e.preventDefault(); step(-1); }
@@ -508,6 +569,7 @@
   try { if (sessionStorage.getItem(SIDE) === '0') document.body.classList.add('nosidebar'); } catch (e) {}
   if (stored) { q.value = stored; run(false); }
   if (hint && stored) hint.classList.add('dim');
+  syncMobileBar();
 
   // After the browser's own hash jump, re-aim at the matched text.
   setTimeout(function () { focusTarget(false); }, 0);
