@@ -1,0 +1,685 @@
+---
+
+title: K Flood Impact and Risk Assesment
+
+source: Extraordinary Council Meeting - Additional Attachments - 26 August 2026
+
+pages: 1205-1253
+
+---
+
+
+# K Flood Impact and Risk Assesment
+
+
+<!-- page 1205 -->
+
+## K
+
+### Flood Impact
+
+### and Risk Assesment
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1206 -->
+
+Department of Climate Change, Energy, the Environment and Water
+
+### Mosman Masterplan Flood Impact and
+
+### Risk Assessment
+
+### Final Report
+
+Report  MHL3232 04 August 2026
+
+Prepared for:
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1206](../images/32d9a45e30948fde.webp)
+
+![Figure on page 1206](../images/7dfc0181e41670b6.webp)
+
+<!-- page 1207 -->
+
+Cover Photograph: Mosman Masterplan Overview (provided by Mosman Council)
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1208 -->
+
+### Mosman Masterplan Flood Impact and
+
+### Risk Assessment
+
+### Final Report
+
+Report MHL3232 04 August 2026
+
+Matthieu Glatz Team Leader, Investigations 110b King Street Manly Vale NSW 2093 T:   02 9949 0200 E:   matthieu.glatz@mhl.nsw.gov.au W:  www.mhl.nsw.gov.au
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1209 -->
+
+Document Control
+
+Issue/ Revision
+
+Author Reviewer Approved for Issue Name Date Final M. Glatz B. McPherson B. McPherson 04/08/2026 © Crown in right of NSW through the Department of Climate Change, Energy, the Environment and Water 2026 This document, Mosman Masterplan Flood Impact and Risk Assessment, is licensed under the Creative Commons Attribution 4.0 Licence, unless otherwise indicated. Please give attribution to: © Mosman Council 2026 We also request that you observe and retain any notices that may accompany this material as part of the attribution. Notice Identifying Other Material and/or Rights in this Publication: The author of this document has taken steps to both identify third-party material and secure permission for its reproduction and reuse. However, please note that where these third-party materials are not licensed under a Creative Commons licence, or similar terms of use, you should obtain permission from the rights holder to reuse their material beyond the ways you are permitted to use them under the Copyright Act 1968.  Please see the Table of References at the rear of this document for a list identifying other material and/or rights in this document. For further information about the copyright in this document, please contact:
+
+573 Military Road, Spit Junction council@mosman.nsw.gov.au (02) 9978 4000
+
+DISCLAIMER The Creative Commons Attribution 4.0 Licence contains a Disclaimer of Warranties and Limitation of Liability. In addition: This document (and its associated data or other collateral materials, if any, collectively referred to herein as the ‘document’) were produced by Manly Hydraulics Laboratory for Mosman Council only. The views expressed in the document are those of the author(s), or as informed by the FS Committee, and do not necessarily represent the views of the Mosman Council. Reuse of this study or its associated data by anyone for any other purpose could result in error and/or loss. You should obtain professional advice before making decisions based upon the contents of this document.
+
+Report Classification
+
+☒ Public Report existence and contents publicly available.
+
+Report No. MHL3232 First published as draft in July 2026
+
+110B King Street Manly Vale  NSW  2093 T 02 9949 0200           TTY 1300 301 181 ABN 27 578 976 844      www.mhl.nsw.gov.au
+
+SEO SYSTEM Manly Hydraulics Laboratory is Safety, Environment & Quality System Certified to AS/NZS 4801, ISO 14001 and ISO 9001
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1209](../images/afad266c3d0d3c32.webp)
+
+<!-- page 1210 -->
+
+MHL3232 - i Classification: Public © Crown 2026
+
+### Foreword
+
+NSW government’s professional specialist advisor, Manly Hydraulics Laboratory (MHL) were commissioned by Mosman Council to undertake a Flood Impact and Risk Assessment of the proposed Mosman Masterplan. The report was prepared by Matthieu Glatz.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1211 -->
+
+MHL3232 - ii Classification: Public © Crown 2026
+
+### Executive summary
+
+Manly Hydraulics Laboratory (MHL) was engaged by Mosman Council (Council) to undertake a preliminary Flood Impact and Risk Assessment (FIRA) of the proposed Mosman Masterplan. The purpose of this FIRA is to consider the potential impacts of built form changes identified in the Mosman Masterplan on flood behaviour and associated risks. The FIRA forms part of the documentation suite being lodged with the Department of Planning, Housing and Infrastructure (DPHI) as part of the planning proposal for the Mosman Masterplan. Reference is made to the draft Mosman Masterplan Structure Plan prepared by SJB Architecture, dated 3 August 2026 (Drawing No. 06, Revision 08). The proposed Mosman Masterplan development layout was assessed against the relevant outcomes of the Mosman Local Government Area (LGA) Flood Study to provide a high-level discussion on potential impacts within the Masterplan catchment. It is noted that the flood impact of the proposed Mosman Masterplan developments is generally limited given it is primarily located along the ridge of the catchment. While the proposed developments are expected to have slightly larger building footprints than the existing buildings, there will also be additional space between buildings for flow conveyance. While the majority of the development is proposed outside of the flood extent for events up to the 1 in 200 Annual Exceedance Probability (AEP), being the largest event modelled in the flood study outside of the Probable Maximum Flood (PMF) that is an extreme event considered separately in this study to assess impact on emergency management, five main locations were identified that may have different levels of encroachment onto the flood extent. Most of these locations are within shallow depth, low velocity and low hazard area. They are also mainly located in flood fringe areas and are therefore unlikely to generate significant impact. However, an overland flow path linking Cowles Road to Rosebery Street, may generate some impacts as the developments are located in areas of increased hazard levels during a 1 in 200 AEP and within the floodway of the PMF. Therefore, during the design of developments in this area, measures should be in place to ensure that it does not result in diversion of flow path toward neighbouring properties or in flooding in the downstream reaches of the catchment. Given this project is at the masterplan stage, there will be opportunities to ensure that no new buildings are located within main floodways. In general, use of hard surfaces should be limited, and pervious or grassed areas are preferred. On-site detention systems should be applied in accordance with Mosman DCP and stormwater policy to ensure that the development does not lead to increased runoff. The proposed developments will be modelled in the existing Mosman LGA TUFLOW hydraulic model during the Flood Risk Management Study and Plan (FRMSP) stage to assess potential impacts in more details. Regarding emergency management, given the short duration of flooding and shallow depth,
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1212 -->
+
+MHL3232 - iii Classification: Public © Crown 2026
+
+shelter-in-place would be preferred to evacuation. Therefore, new developments should be designed to either not be impacted by flooding or shelter-in-place requirements should be followed to ensure an area is safe for resident in each building. The Mosman Masterplan proposes a much smaller built footprint than DPHI’s currently applicable Low and Mid-Rise Housing Policy (LMR) and is located in a more suitable area which includes less main overland flow paths within the development area.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1213 -->
+
+MHL3232 - iv Classification: Public © Crown 2026
+
+### Contents
+
+1 INTRODUCTION 1 1.1 FIRA background 1 1.2 Project context 1 1.3 FIRA requirement 1 2 BACKGROUND 5 2.1 Study area 5 2.2 Flood behaviour 5 2.3 Flood history 5 2.4 Emergency management 6 3 AVAILABLE INFORMATION 10 4 FLOOD RELATED REQUIREMENTS 12 5 PRE-DEVELOPED MODELLING AND ANALYSIS 13 5.1 Existing flood modelling 13 5.2 Existing flood impacts 14 6 POST-DEVELOPED ANALYSIS 17 6.1 Proposed development assessment 17 6.2 Flood impacts of proposed development 19 7 KEY RISKS TO BE MANAGED 20 8 CONCLUSIONS AND RECOMMENDATIONS 21 REFERENCES 22 APPENDIX A POTENTIAL IMPACT LOCATIONS ASSESSMENT 1
+
+FIGURES Figure 1-1 Overview of Mosman Masterplan (Source: Mosman Council) 2 Figure 1-2 Elevation data in Mosman 3 Figure 1-3 Comparison of LMR (left) and Mosman Masterplan (right) potential development area of the LGA 4 Figure 2-1 Preliminary flood planning area vs. proposed Mosman Masterplan area 7 Figure 2-2 Flood emergency response classifications during 1% AEP event 8 Figure 2-3 Flood emergency response classifications during PMF event 9 Figure 3-1 Available gauges within Mosman LGA (Source: MHL, 2025) 11 Figure 5-1 Overview of 1 in 200 AEP flood depth vs. proposed Mosman Masterplan developments 16 Figure 6-1  General flood hazard vulnerability curves; Source: (DPE, 2023) 18
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1214 -->
+
+MHL3232 - 1 Classification: Public © Crown 2026
+
+### 1 Introduction
+
+Manly Hydraulics Laboratory (MHL) was engaged by Mosman Council (Council) to undertake a preliminary Flood Impact and Risk Assessment (FIRA) of the proposed Mosman Masterplan.
+
+#### 1.1 FIRA background
+
+The purpose of this FIRA is to consider the potential impacts of built form changes identified in the Mosman Masterplan on flood behaviour and associated risk within Mosman Local Government Area (LGA). The FIRA forms part of the documentation suite being lodged with the Department of Planning, Housing and Infrastructure (DPHI) as part of the planning proposal for the Mosman Masterplan. An overview of the footprint of the proposed developments is provided in Figure 1-1. The bulk of the development is located along Spit Road and Military Road which are the main ridges (highest point) of the LGA as presented in Figure 1-2.
+
+#### 1.2 Project context
+
+The current assessment relies on the recent Mosman LGA Flood Study completed by MHL in November 2025. This study provides detailed information on existing flood behaviours and flood risks within Mosman LGA. The Mosman Masterplan is an alternative layout to the currently in-force Low and Mid-Rise Housing Policy (LMR) and aims at significantly reducing the area of the LGA potentially impacted by development from 27% to approximately 12% of the LGA’s developable land (Figure 1-3).
+
+#### 1.3 FIRA requirement
+
+It is understood that the NSW Government’s Flood Prone Land Policy as set out in the Flood Risk Management Manual should be considered (particularly the Flood impact and risk assessment – Flood risk assessment guideline LU01). Mosman Council has recently applied for grant funding to undertake a Flood Risk Management Study and Plan (FRMSP) in the coming years. Therefore, statements and conclusions regarding post-development conditions in this report remained general in nature and additional modelling is not part of the scope of this report as it will be undertaken as part of this future FRMSP.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1215 -->
+
+MHL3232 - 2 Classification: Public © Crown 2026
+
+Figure 1-1 Overview of Mosman Masterplan (Source: Mosman Council)
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1215](../images/557e80bcffa795a2.webp)
+
+<!-- page 1216 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1216](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1216](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1216](../images/0de3ae6f00eb778a.webp)
+
+<!-- page 1217 -->
+
+MHL3232 - 4 Classification: Public © Crown 2026
+
+Figure 1-3 Comparison of LMR (left) and Mosman Masterplan (right) potential development area of the LGA
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1217](../images/d5e5d3217bf9045f.webp)
+
+<!-- page 1218 -->
+
+MHL3232 - 5 Classification: Public © Crown 2026
+
+### 2 Background
+
+This section provides background to the study area, describes known flood behaviour, flood history and existing flood emergency management.
+
+#### 2.1 Study area
+
+Mosman LGA catchment is located approximately 6 kilometres north of Sydney CBD and is subject to overland flooding due to the generally very steep catchment topography (Figure 1-2). The proposed Mosman Masterplan developments built footprint changes are concentrated near the centre of the LGA along the major roads of Mosman (i.e., Spit Road and Military Road) which generally form the ridge of the catchment, as well as other elevated streets and roads within the catchment. Land use within the highly urbanised study area is primarily residential, with some commercial, recreational and open space areas. The density of development is generally greatest in the corridor adjoining Military Road. Open space areas within the study area are mainly administered by Council and include parks, sports facilities and playground. The heavily developed nature of the catchment meant that the original natural water courses have largely been developed over and replaced by a substantial and complex system of stormwater infrastructure.
+
+#### 2.2 Flood behaviour
+
+The flood behaviour in the study area is generally flashy with critical durations of less than 3 hours and the majority of the proposed development area having critical durations of less than 60 minutes for smaller events (10% Annual Exceedance Probability (AEP) event or more frequent) and less than 30 minutes for larger events (2% AEP event or rarer). Flooding is generally short-lived due to the steepness of the catchment and most affected areas are located in the lower reaches of the catchment where runoff water can accumulate. A number of larger (but often relatively shallow) flow paths occurs throughout the catchment where depression of the topography allows for flow concentration. The main flow paths are illustrated in Figure 2-1 that shows the extent of the 1 in 200 AEP event, against the proposed built form of the Mosman Masterplan developments. Flooding in Mosman is also largely influenced by blockage of the pit and pipe system (e.g., due to tree leaves falling during storm events) allowing localised exacerbation of overland flooding instead of flood water flowing into the drainage system. While elevated ocean levels may increase risks in the lower reaches of the catchment, the Mosman Masterplan area is proposed at a significantly higher elevation, and this would therefore mean that ocean conditions would have no influence on flood behaviour within the development area and heavy rainfalls remain the primary cause of flooding.
+
+#### 2.3 Flood history
+
+Flooding in the Mosman LGA has primarily been triggered by short-duration, high-intensity rainfall events that overwhelm local stormwater infrastructure. The area’s steep terrain and local gullies contribute to fast runoff, leading to flash flooding in low-lying streets, driveways,
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1219 -->
+
+MHL3232 - 6 Classification: Public © Crown 2026
+
+and basements. When rain is exceptionally heavy, the drainage systems can be overwhelmed, causing water to back up onto roads, parks and private properties. These floods disrupt traffic, damage residential and commercial properties, and temporarily displace community activities. Notably, the Mosman LGA experienced heavy rainfall leading to flooding in recent years in 2012, 2018, 2022, 2023, 2024 and 2026, underscoring the recurring nature of these events. The largest rainfall events in the Mosman LGA were recorded in September 1993 for the Taronga Zoo monitoring station located in the southern part of the catchment, November 2018 for the Spit Bridge monitoring station located at the southernmost point of the catchment and 2023 for the Mosman Bowling Club located at the centre of the catchment. These differences are due to different record period but also to the highly localised behaviour of rainfall events able to be very intense in one part of the catchment and much less so in the remainder of the catchment despite the relatively small size of the LGA.
+
+#### 2.4 Emergency management
+
+Given the relatively shallow depth of flooding and the short duration of inundation, no particular evacuation processes are likely to be required within the Mosman Masterplan development area. It is also noted that the Mosman LGA Flood Study (MHL, 2025) found that the majority of properties subjected to the Mosman Masterplan developments have a Flood Emergency Response Classification (FERC) of “Not Affected” during a 1% AEP with a small number of properties classified as “Flooded with rising road” and three properties classified as “Flood-affected isolated and elevated” (Figure 2-2). During a Probable Maximum Flood (PMF) event, the same three classifications occur within the development area, but the number of properties classified as “Flood with rising road” and “Flood-affected isolated and elevated” increased significantly (Figure 2-3). Noting the short duration of inundation, there is limited requirements or possibility for evacuation of properties classified as “Flood-affected isolated and elevated” by emergency services and applying shelter-in-place wherever possible is preferred.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1220 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1220](../images/3acbc05a50b4f79b.webp)
+
+![Figure on page 1220](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1220](../images/4b509f7969e74e77.webp)
+
+<!-- page 1221 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1221](../images/ae533f5b9107e9e3.webp)
+
+![Figure on page 1221](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1221](../images/4b509f7969e74e77.webp)
+
+<!-- page 1222 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1222](../images/be88012229be8508.webp)
+
+![Figure on page 1222](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1222](../images/4b509f7969e74e77.webp)
+
+<!-- page 1223 -->
+
+MHL3232 - 10 Classification: Public © Crown 2026
+
+### 3 Available information
+
+The main information available for this preliminary FIRA report included: • The Mosman LGA Flood Study (MHL, 2025) and all associated modelling files including WBNM hydrological model and TUFLOW hydraulic model. This study provides information on available data for the study (e.g., DEM, cadastre, pits and pipes network), flood behaviour, flood history, land use, historical information (e.g., photographs) collected from the community, models calibration/validation details and mapping including critical duration assessments, peak flood depths, levels, velocities and hazards for the 20%, 10%, 2%, 1%, 1 in 200 AEP and PMF events, preliminary flood planning area (equivalent to 1 in 200 AEP event), preliminary flood function and FERC for the 1% AEP and PMF events, preliminary Flood Planning Constraints Categories (FPCC) and sensitivity analysis on the 1% AEP (including climate change). • The Mosman/North Sydney Flood Emergency Sub Plan (NSW SES, 2021). This plan describes the general approach to flood emergency in Mosman with goals, actions and clarification of responsibilities. • Three rainfall gauges (Taronga Zoo, Spit Bridge and Mosman Bowling Club) within Mosman LGA (Figure 3-1). • Various guidelines from the Flood Risk Management Manual and particularly, the Flood Impact and risk assessment - Flood risk management guideline LU01 (DPE, 2023) that guides the development of FIRA reports. • GIS information including a cadastral layer, the proposed Mosman Masterplan development built footprint in DXF format, Google and Nearmap satellite imagery, all layers from the Mosman LGA Flood Study (including all relevant modelling input and output files). • Draft Mosman Masterplan Structure Plan prepared by SJB Architecture, dated 3 August 2026 (Drawing No. 06, Revision 08).
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1224 -->
+
+MHL3232 - 11 Classification: Public © Crown 2026
+
+Figure 3-1 Available gauges within Mosman LGA (Source: MHL, 2025)
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1224](../images/422349b0bd3b0b20.webp)
+
+<!-- page 1225 -->
+
+MHL3232 - 12 Classification: Public © Crown 2026
+
+### 4 Flood related requirements
+
+While there are no specific flood related requirements, Mosman Development Control Plan (DCP) provides objectives regarding stormwater as presented in Section 5-13 of the DCP. The main three objectives relevant to this study include: • Objective O1: to have the adverse effects of stormwater on the environment minimised, and prevented where possible, including disturbance to existing drainage patterns. • Objective O3: to have stormwater quality and quantity controlled and eliminate stormwater discharge to adjoining properties. • Objective O4: to have on-site stormwater collection and re-use.
+
+The Mosman Masterplan area has been assessed to understand if any adverse impact may result from the development of the area and if there is any impact on adjoining properties outside the area as described in Sections 5 to 7.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1226 -->
+
+MHL3232 - 13 Classification: Public © Crown 2026
+
+### 5 Pre-developed modelling and analysis
+
+This section describes the existing flood modelling and impacts in the area with proposed development.
+
+#### 5.1 Existing flood modelling
+
+Mosman LGA Flood Study (MHL, 2025) undertook detailed flood modelling of the whole of Mosman LGA (which includes the study area for this FIRA) using WBNM hydrologic model and TUFLOW Heavily Parallelised Compute (HPC) hydraulic modelling (Build 2023-03-AC; latest version at the time of modelling) package to assess flood behaviours. These models are well-recognised software packages commonly used to meet industry best practice for flood studies in Australia. WBNM (version 2017) which includes the Australian Rainfall and Runoff (ARR 2019) guidelines’ design rainfalls and procedures based on the 2016 Intensity Frequency Duration datasets from the Bureau of Meteorology was used. This model included parameters such as rainfall losses, routing and lag parameters which were adjusted as part of the calibration process.  This model was only used to define critical durations, based on the ARR2019 ensemble approach, and rainfalls with the relevant critical duration were directly applied in the TUFLOW model. The Generalised Short Duration Method (GSDM), developed by the Bureau of Meteorology was used to define the PMF event. While the developed model was a large-scale model covering the entire LGA, the cell size used in the model was 1 m by 1 m which is consistent with the resolution of the best available Digital Elevation Model (DEM) representing the ground levels around the catchment. This DEM was dated 2020 and remains the most recent dataset available at this location at the time of the present study. It is also noted that this DEM is limited by the post- processing of the buildings and occasional depressions occur where buildings are present leading to potential pooling of water. The model is fit-for-purpose for the current FIRA report given the proposed Mosman Masterplan developments are also large-scale and require high level commentary at this stage. The model was run for the 20%, 10%, 2%, 1% and 1 in 200 AEP flood events as well as the PMF flood event. Each event was represented by an envelope of multiple critical durations ranging between 10 and 180 minutes to consider the variation in critical duration across the catchment area. It also consists of an envelope of three different blockages (i.e., no blockage, design blockage as recommended in ARR2019 and double design blockage). Since this study was completed in late 2025, the model is considered to be current as negligible changes have occurred within the study area since completion of the flood study. The hydraulic model includes the pit and pipe network for any pipe with a diameter of more than 300 mm. Buildings were represented as high roughness and fences as partial blockage. Roadside gutters were enforced. Commonly accepted roughness values were used to represent the various surface types. The data from the ARR 2019 guidelines were used to define losses, pre-burst and rainfalls. Continuing losses of 2.5 mm/hour for pervious areas and 0 mm/hour for impervious areas
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1227 -->
+
+MHL3232 - 14 Classification: Public © Crown 2026
+
+were applied following calibration. Water levels of Middle Harbour for the design event simulation were determined based on the "Modelling the Interaction of Catchment Flooding and Oceanic Inundation in Coastal Waterways" (NSW Office of Environment and Heritage (OEH), 2015). Once the model developed, it was calibrated against the 12 January and 8 March 2022 events and validated against the 9 February 2023 event due to the availability of information (flood photographs and estimated depths from community consultation, water level and rainfall gauge data) during these events. Sensitivity was undertaken to assess the impact of rainfall losses, roughness, tailwater conditions, stormwater blockages and climate change. Blockage was found to be the most sensitive parameter which led to the use of an envelope of a range of blockage scenarios in the final design event mapping as previously mentioned. Climate change scenarios included three combinations including increases in rainfall by 9% and ocean level by 0.4 m, increases in rainfall by 22% and ocean level by 0.78 m, and increases in rainfall by 30% and ocean level by 1.3 m. The worst climate change scenario led to increases in water level in the study area of the present report by generally less than 0.1 m with very localised increases in the order of 0.15 m.
+
+Results of the model are discussed in the following section.
+
+#### 5.2 Existing flood impacts
+
+The results of the hydraulic model highlighted that, for events from 20% AEP to 1 in 200 AEP, there is limited overlap between the flood extent and the proposed Mosman Masterplan developments built footprint. As shown in Figure 5-1, there are only 5 areas where the proposed Mosman Masterplan developments are overlapping with the flood extent during a 1 in 200 AEP event. These 5 potential areas of impact are typically present for all events smaller than the 1 in 200 AEP but to a lesser degree. Figure A-1 to Figure A-10 in Appendix A present the peak depth and peak velocity at the 5 locations with most potential impact for events ranging from 20% AEP to 1 in 200 AEP. Location 1 (Figure A-1 and Figure A-2) is a minor encroachment of the Mosman Masterplan development onto the flood extent that commences from a 2% AEP flood event. Ponding is generally less than 0.12 m and is due to a shallow overland flowpath from Mitchell Lane toward Bapaume Road. The velocities are generally about 0.5 to 1 m/s for most events. This depression may be exacerbated by building post-processing in the DEM. Location 2 (Figure A-3 and Figure A-4) is a depression in the ground level where multiple buildings are currently located allowing ponding to occur at this location due to water filling the depressions. This depression appears to be inundated as early as a 20% AEP event and reaches localised depths of approximately 0.3 m. The velocities are generally about 0.5 to 1 m/s for most events. It is noted that this may be exacerbated by building post-processing in the DEM and it does not appear to be along a main flow path. Location 3 (Figure A-5 and Figure A-6) is the largest area of potential impact. This appears to be one of the main flow paths in the area where flood water flows down the slope from Cowles Road to Ourimbah Road across Bond Street and Rosebery Street. This flow path
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1228 -->
+
+MHL3232 - 15 Classification: Public © Crown 2026
+
+starts to form from a 20% AEP event. A number of deep sections (over 0.5 m) are present along the flow path, but these higher depth areas may be exacerbated by post-processing of buildings in the DEM. The velocities are generally about 0.5 to 1 m/s with localised areas having occasional velocities of more than 1 m/s for most events. However, the flow path is likely to remain should blockage of the drainage network occur or when flooding is intense enough to overwhelm the drainage network. Location 4 (Figure A-7 and Figure A-8) is a secondary flow path that is cutting the corner of Prince Street with Bardwell Road. The inundation appears to commence during a 2% AEP and is typically less than 0.2 m depth with one localised depth of approximately 0.3 m. The velocities are generally about 0.5 to 1 m/s for most events. Once again, this appears to be potentially exacerbated by post-processing of building in the DEM generating some depressions where water can settle. There is another minor encroachment of flood extent near the corner of Prince Street and Wudgong Street which commences during a 1 in 200 AEP and remains with a depth of less than 0.22 m and velocities of generally less than 0.5 m/s. Location 5 (Figure A-9 and Figure A-10) is a depression in the ground level where a building currently exists along Gouldsbury Street, directly south of Allan Border Oval. This depression allows the flow path to widen at this location. This depression appears to be inundated as early as a 20% AEP. This depression reaches localised depths of approximately 0.4 m but may also be exacerbated by building post-processing in the DEM. The velocities are generally about 0.5 to 1 m/s for most events. It can be noted that these 5 locations are generally situated in shallow depth and low velocity areas, and are generally subject to minor flood impacts with the exception of Location 3 that includes a larger flow path leading to increased impacts. During a PMF event, the flood extent creates significantly more flow paths across the catchment (Figure A-11 and Figure A-12). However, this event is typically more used for emergency management and planning rather than to significantly control or restrict developments. It is noted that the depth of inundation remains generally less than 0.3 m, and the velocity less than 1 m/s for the majority of the Mosman Masterplan development area with localised higher depths and velocities, and this typically occurs along the five locations described above. As mentioned in Section 2.4, it was noted that the main flood emergency response classifications in the Mosman Masterplan developments area during a PMF were limited to “Flooded with rising road” and “Flood-affected isolated and elevated”. Hence, there would either be an access road available, or the shelter-in-place option would be possible for the various properties in the study area given the short duration of events.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1229 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1229](../images/e3deda53764858ec.webp)
+
+![Figure on page 1229](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1229](../images/4b509f7969e74e77.webp)
+
+<!-- page 1230 -->
+
+MHL3232 - 17 Classification: Public © Crown 2026
+
+### 6 Post-developed analysis
+
+This section describes the flood assessment and impacts of the Masterplan development.
+
+#### 6.1 Proposed development assessment
+
+It is noted that no additional modelling has been undertaken as part of this study as this will be undertaken during the Mosman LGA FRMSP. As such the impacts have been assessed qualitatively for the purpose of this report. As discussed in the previous section, there appears to be five key locations where potential impact may occur. Impact of the proposed Mosman Masterplan developments on each of these areas is discussed below. The 1 in 200 AEP and PMF flood hazard categories (refer to Figure 6-1 for definition of each hazard category) are presented against the existing and proposed built footprints at each of the 5 key locations in Figure A-13 and Figure A-14 in Appendix A, respectively. Moreover, the 1% AEP and PMF flood functions (Floodway, flood storage and flood fringe) are also presented against the existing and proposed built footprints at each location in Figure A-15 and Figure A-16 in Appendix A, respectively. The following was observed: • Location 1 is generally in an H1 hazard category and in the flood fringe up to the PMF event. The flood water is currently travelling between two existing buildings. Should the proposed configuration be applied, the southern building would not be present to constrict the flow, and it is likely that this encroachment would not occur anymore. However, it may allow water to flow more freely toward Bapaume Road, and this should be taken into consideration or compensated when developing this area to ensure no exacerbation of flooding occurs downstream of the proposed developments. • Location 2 is generally in an H1 hazard category up to the 1 in 200 AEP event and partially in the H2 hazard category during a PMF event. It is also in the flood fringe during a 1% AEP event and partially in the flood storage during a PMF event. The built footprint of the proposed developments is relatively similar to the existing properties built footprint is the area is subject to ponding. Therefore, no significant changes are expected in the local flood behaviour. Proposed developments should however consider the potential for the shallow inundation of the lots (e.g., waterproofing, elevated floor level). • Location 3 is generally in an H1 hazard category with small H2 hazard category areas along the flow path between Cowles Road and Bond Street and downstream of Rosebery Street during a 1 in 200 AEP event. This increases to H2 and H3 categories during a PMF event. Between Bond Street and Rosebery Street, there is more extensive H2 categories and localised H3 categories and even more during a PMF event with small areas of H4/H5 category. Regarding flood function, this flow path is classified as flood fringe and flood storage with minor floodway areas during a 1% AEP event and most of the flow path is within the floodway during a PMF event. It is noted that, while the proposed developments are expected to have slightly larger building footprints, there will also be additional space between buildings for flow conveyance. There is also potential to adjust building locations in order to channel the flow path between buildings and minimise flood impact. Care should be taken if the flow
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1231 -->
+
+MHL3232 - 18 Classification: Public © Crown 2026
+
+conveyance through the new development is more efficient than the existing developments as it may lead to faster flooding or slight increases in flood levels downstream of the development. Wherever practical, overland flows should be maintained to a similar level or lower than at present. • Location 4 is generally located in an H1 category with very localised H2 areas during a 1 in 200 AEP and the 1% AEP flood function typically shows flood fringe areas. During a PMF event, this increases to a H2 hazard category with localised H3 category areas, and the area is mainly classified as flood storage with small portions of floodway. The proposed developments have similar or slightly reduced built footprint which should not have significant impact on the local flood behaviour. • Location 5 is generally located in an H1 category with very localised H2 areas during a 1 in 200 AEP. The 1% AEP flood function is typically flood fringe with minor flood storage areas. During a PMF, the hazard increases to H2 category with small H3 category areas and the flood storage area increases. It is noted that an existing building west of the proposed development is proposed to be removed which would likely improve conveyance of flow in this area and reduce encroachment on the development. However, the possibility for the flood water to more easily flow in a southern direction should be considered or compensated to ensure that it does not exacerbate flooding downstream of the area.
+
+It can be noted that these 5 locations are generally situated in flood fringe and low hazard areas, and proposed developments are likely to have minor impacts on flood behaviour, with the exception of Location 3 that includes a larger flow path associated with higher hazard categories, particularly between Bond Street and Rosebery Street, and this location would therefore require more careful considerations during the design and assessment of individual site proposals.
+
+Figure 6-1  General flood hazard vulnerability curves; Source: (DPE, 2023)
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1231](../images/90ed8f0c31dab310.webp)
+
+<!-- page 1232 -->
+
+MHL3232 - 19 Classification: Public © Crown 2026
+
+#### 6.2 Flood impacts of proposed development
+
+Based on the above assessment of flood hazard, flood function, depths and velocities, the majority of the development is likely to have minimal impacts on the surrounding properties. The flow path between Cowles Road and Rosebery Street (Location 3) appears to be the main area with potential for flow rearrangement while the other areas are generally subject to shallow depths and minor encroachments for which the impact will remain relatively localised. At Location 3, should the flow conveyance be more efficient, there is a potential for the flood water reaching the downstream properties faster and altering the flood behaviour. This assessment is based on Masterplan proposal and hence there are still opportunities to adjust design and layout of specific properties during the design and assessment of individual site proposals. There is therefore potential to situate the various buildings outside of main flow path and in a way that minimises downstream impacts by slowing down the flows, avoiding hard surfaces / concreted areas and maximising pervious materials. There should be minimal impact on flood evacuation requirements as the majority of flooding in the study area is relatively shallow and of short duration and most access roads remain open. The shelter-in-place approach is likely to be the best approach to flooding in the study area. As discussed in Section 5.1, climate change sensitivity using an increase of 30% in rainfall lead to increases in water level within the study area of typically less than 0.1 m and only localised areas with 0.15 m increases. While such increases in rainfall intensity may increase the frequency of occurrence of flood events, it is unlikely to significantly change the flood behaviour of event of a specific intensity as it will more likely generate a ‘shift in AEP’ with rarer events becoming more frequents (e.g., the 1% may become a 2% AEP) while the general flow path will remain similar.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1233 -->
+
+MHL3232 - 20 Classification: Public © Crown 2026
+
+### 7 Key risks to be managed
+
+The proposed developments appear to improve conveyance of water flowing down the steep catchment slope as the general built footprint of the proposed development is more compact and consists of larger buildings with larger spacings between buildings. Currently, there are numerous smaller houses that are close to each other and constricting flow more significantly. The proposed developments will have more open space between buildings for flood water to flow through and this is beneficial for mitigating overland flooding of the properties and reducing risks of upstream inundation. However, it may slightly increase downstream flooding if the flood water gets downstream faster. In order to mitigate this, the proposed developments should minimise hard surfaces and favour pervious areas. Wherever practical, capture of stormwater should be undertaken consistent with the objectives of the Mosman DCP and appropriate surfaces should be designed to slow flows down the slope. Buildings should also be constructed outside of main flow paths, wherever possible, to minimise possibility of flood water being diverted towards neighbouring properties and impacting new properties. This is particularly the case for the flow path between Cowles Road and Rosebery Street (Location 3). While flooding is generally shallow and of short duration, the developments should still have an area allowing shelter-in-place or be designed to not be impacted by shallow inundation. This should also consider the potential for small increases in levels due to climate change. There does not appear to be any changes in emergency management risks given the type of inundations typically not requiring evacuation in the study area.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1234 -->
+
+MHL3232 - 21 Classification: Public © Crown 2026
+
+### 8 Conclusions and recommendations
+
+Based on this assessment, the flood impact of the proposed Mosman Masterplan developments is generally limited given it is primarily located along the ridge of the catchment. While the proposed developments are expected to have slightly larger building footprints than the existing buildings, there will also be additional space between buildings for flow conveyance. While the majority of the development is proposed outside of the flood extent for events up to the 1 in 200 AEP, five main locations were identified that may have different levels of encroachment onto the flood extent for events up to the 1 in 200 AEP. Most of these locations are within shallow flood depth (e.g., generally less than 0.3 m), low velocity (generally less than 0.5 - 1m/s) and low hazard area (e.g., generally H1 or H2). They are also mainly located in flood fringe areas and are therefore unlikely to generate significant impact. However, the overland flow path linking Cowles Road to Rosebery Street (Location 3), may generate significant impacts as the developments are located in areas of increased hazard levels (e.g., localised H3 during a 1 in 200 AEP and within the floodway of the PMF). Therefore, during the design and assessment of individual site proposals, measures should be in place to ensure that it does not result in diversion of flow path toward neighbouring properties or in more conveyance through the higher part of the catchment that may lead to faster response and flooding in the downstream reaches of the catchment. Given this is an assessment of the Masterplan Proposal, there will be opportunities to optimise the individual developments to ensure that no building is located within main floodways. To minimise flood impacts, use of hard surfaces should be limited, and pervious or grassed areas should be encouraged. On-site detention systems should be applied in accordance with Mosman DCP and stormwater policy to ensure that the development does not lead to increased runoff and ground surface should be selected to allow slowing down of the flow down the slope to minimise increase in runoff toward the downstream part of the catchment. The proposed developments will need to be modelled in the existing Mosman LGA TUFLOW hydraulic model during the FRMSP stage to assess impacts in more detail. Regarding emergency management, given the short duration of flooding and shallow depth, shelter-in-place would be preferred to evacuation. Therefore, new developments should be designed to either not be impacted by flooding (e.g., floodproofing or applying elevated floor levels) or shelter-in-place requirements should be followed to ensure an area is safe for resident in each building. The Mosman Masterplan proposes a smaller built footprint than DPHI’s currently applicable Low and Mid-Rise Housing Policy (LMR) and is located in a more suitable area which includes less main overland flow paths within the development area such as the flow paths flowing south from the corner of Bardwell Road and Prince Street, the one flowing southwest from Allan Border Oval and the downstream reaches of the flow path highlighted as Location 3 in this report.
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1235 -->
+
+MHL3232 - 22 Classification: Public © Crown 2026
+
+### References
+
+Ball, J. E. (2019), Australian Rainfall and Runoff - A guide to flood estimation. Commonwealth of Australia (Geoscience Australia) (ARR2019). Department of Planning and Environment (DPE) (2023), Flood Impact and risk assessment - Flood risk management guideline LU01, https://www.environment.nsw.gov.au/sites/default/files/flood-risk-management-impact-risk- assessment-230234.pdf DPE (2023), Flood Hazard, Flood risk management guideline (FB03). Department of Planning and Environment. Manly Hydraulics Laboratory (MHL) (2025), Mosman LGA Flood Study prepared for Mosman Council, November 2025 Mosman Council (2024), Residential Development Control Plan 2012, As amended December 2024 Mosman Council (2024). Policy for Stormwater Management in Mosman, Public Document Version: 2 / CM Record No.: 24/690179 Adopted on 3 December 2024 NSW State Emergency Service (2021), Mosman/North Sydney Flood Emergency Sub Plan https://www.ses.nsw.gov.au/sites/default/files/2024-02/mosman-north-sydney-lfp-vol-1- endorsed-dec-2021_0.pdf Office of Environment and Heritage (OEH) (2015), Floodplain Risk Management Guide - Modelling the interaction of catchment flooding and oceanic inundation in coastal waterways
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1236 -->
+
+MHL3232 - A1 Classification: Public © Crown 2026
+
+### Appendix A Potential impact locations assessment
+
+Figure A-1 Potential impact location 1 – Peak depth
+
+Figure A-2 Potential impact location 1 – Peak velocity Figure A-3 Potential impact location 2 – Peak depth
+
+Figure A-4 Potential impact location 2 – Peak velocity Figure A-5 Potential impact location 3 – Peak depth
+
+Figure A-6 Potential impact location 3 – Peak velocity Figure A-7 Potential impact location 4 – Peak depth
+
+Figure A-8 Potential impact location 4 – Peak velocity Figure A-9 Potential impact location 5 – Peak depth
+
+Figure A-10 Potential impact location 5 – Peak velocity Figure A-11 Overview of PMF depth vs. proposed Mosman Masterplan developments
+
+Figure A-12 Overview of PMF velocity vs. proposed Mosman Masterplan developments Figure A-13 Potential impact locations and 1 in 200 AEP flood hazard
+
+Figure A-14 Potential impact locations and PMF flood hazard Figure A-15 Potential impact locations and 1% AEP flood function
+
+Figure A-16 Potential impact locations and PMF flood function
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+<!-- page 1237 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1237](../images/54fea27184150127.webp)
+
+![Figure on page 1237](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1237](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1238 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1238](../images/7f0b3ce2654e2a74.webp)
+
+![Figure on page 1238](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1238](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1239 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1239](../images/1723bcb287381d62.webp)
+
+![Figure on page 1239](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1239](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1240 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1240](../images/b335d4d04fd17d61.webp)
+
+![Figure on page 1240](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1240](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1241 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1241](../images/602ed961e49a25d0.webp)
+
+![Figure on page 1241](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1241](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1242 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1242](../images/3e2ef7d823c9d12f.webp)
+
+![Figure on page 1242](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1242](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1243 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1243](../images/8090c4e4183f5d73.webp)
+
+![Figure on page 1243](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1243](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1244 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1244](../images/3d915c5057a86ff1.webp)
+
+![Figure on page 1244](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1244](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1245 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1245](../images/af9043a799e245bf.webp)
+
+![Figure on page 1245](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1245](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1246 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1246](../images/c083445e5825fda2.webp)
+
+![Figure on page 1246](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1246](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1247 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1247](../images/2db25b9d4ef54542.webp)
+
+![Figure on page 1247](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1247](../images/4b509f7969e74e77.webp)
+
+<!-- page 1248 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1248](../images/3b218d8404e9048f.webp)
+
+![Figure on page 1248](../images/7dcdcbc24e8ae793.webp)
+
+![Figure on page 1248](../images/4b509f7969e74e77.webp)
+
+<!-- page 1249 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1249](../images/89c329f1c584ebdf.webp)
+
+![Figure on page 1249](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1249](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1250 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1250](../images/5d75f90087f044e8.webp)
+
+![Figure on page 1250](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1250](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1251 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1251](../images/0cb6a968bfb6f6b4.webp)
+
+![Figure on page 1251](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1251](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1252 -->
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
+
+![Figure on page 1252](../images/e66ea3b3b4045e1f.webp)
+
+![Figure on page 1252](../images/4b509f7969e74e77.webp)
+
+![Figure on page 1252](../images/c796bab5c41f10e5.webp)
+
+<!-- page 1253 -->
+
+© Crown 2026
+
+110B King Street
+
+Manly Vale NSW 2093
+
+August 2026
+
+Attachment 1.1.11 Mosman Council
